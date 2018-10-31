@@ -9,15 +9,17 @@ Website for a ONG of pets.
 3. Active the virtualenv
 4. Install the requirements
 5. Set one instance with the .env
-6. Run the tests
+6. Run the collectstatic
+7. Run the tests
 
 ```console
-git clone git@github.com:willtrigo/patinhas_que_brilham.git patinhas_que_brilham
+git clone https://github.com/willtrigo/patinhas_que_brilham.git patinhas_que_brilham
 cd patinhas_que_brilham
-python -m venv .patinhas_que_brilham
+python3.7 -m venv .patinhas_que_brilham
 source .patinhas_que_brilham/bin/activate
 pip install -r requirements-dev.txt
 cp contrib/env-sample .env
+python manage.py collectstatic
 python manage.py test
 ```
 
