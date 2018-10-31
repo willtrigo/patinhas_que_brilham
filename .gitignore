@@ -11,6 +11,7 @@ include/
 lib/
 lib64/
 lib64
+staticfiles
 
 # Installer logs
 pip-log.txt
