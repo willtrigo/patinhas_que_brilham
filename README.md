@@ -25,16 +25,18 @@ python manage.py test
 
 ## How to do the deploy?
 
-1. Set a instant in the heroku
-2. Send the configurations to the heroku
-3. Set a SECRET_KET safety key for the instance
-4. Set DEGUB=False
-5. Send the code to heroku
+1. Create a instant in the heroku
+2. Create a postgres addon in the heroku
+3. Set a SECRET_KET safety key for the instance, you will need to generate with the secret_gen.py
+4. Set ALLOWED_HOSTS to allowed the host
+5. Set DEGUB
+6. Send the code to heroku
 
 ```console
 heroku create myinstant
-heroku config:push
+heroku addons:create heroku-postgresql:hobby-dev
 heroku config:set SECRET_KEY='python contrib/secret_gen.py'
+heroku config:set ALLOWED_HOSTS=.herokuapp.com
 heroku config:set DEBUG=False
 git push heroku master --force
 ```
