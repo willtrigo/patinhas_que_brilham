@@ -1,1 +1,53 @@
-<header></header>
+{% load staticfiles %}<div class="container-fluid bg-secondary">
+      <div class="row">
+        <div class="col-0 ml-2">
+          <a href="https://www.instagram.com/patinhasquebrilham/" target="_blank">
+            <div class="fa-stack fa-lg">
+              <i class="fas fa-square fa-stack-2x text-secondary"></i>
+              <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+            </div>
+          </a>
+        </div>
+        <div class="col-0">
+          <a href="https://www.facebook.com/AmordemaisAmorporVidas/" target="_blank">
+            <div class="fa-stack fa-lg">
+              <i class="fas fa-square fa-stack-2x text-secondary"></i>
+              <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <header class="navbar navbar-expand flex-column flex-md-row" style="background-color: #f7dd95; min-height: 4rem;">
+      <a class="navbar-brand mr-0 mr-md-2 py-2" href="/" aria-label="PatinhasQueBrilham">
+        <div class="d-flex align-items-center">
+          <img src={% static 'img/patinhasquebrilham.logo.png' %} height=40 alt="Patinhas que Brilham"/>
+          <strong class="ml-2" style="color: #b36a29;">Patinhas que Brilham</strong>
+        </div>
+      </a>
+      <ul class="navbar-nav ml-auto flex-wrap justify-content-center">
+        <li class="nav-item">
+          <a href="/" class="nav-link active">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Adoção</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Doações</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Parceiros</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Contato</a>
+        </li>
+      </ul>
+      <a class="nav-link text-dark col-auto" href="#">
+        <div class="container-fluid rounded" style="font-size: 24px; background-color: #f28b3d;">
+          <div class="fa-1x">
+            <i class="fas fa-hand-holding-usd"></i>
+            <small style="font-weight: bold;">Doe agora</small>
+          </div>
+        </div>
+      </a>
+    </header>

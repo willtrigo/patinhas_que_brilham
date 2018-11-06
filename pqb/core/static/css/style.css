@@ -1,0 +1,27 @@
+/* menu */
+.nav-link:link {
+    color: #f28b3d;
+    font-weight: bold;
+}
+.nav-link:visited, .nav-link:hover, a.nav-link.active {
+    color: #b36a29;
+}
+i.fab:hover {
+    color: #f28b3d;
+}
+@media (max-width:991px) {
+  .bg-navbar {
+    padding-right: .5rem;
+    padding-left: .5rem;
+  }
+}
+@media (min-width:768px) {
+  @supports ((position: -webkit-sticky) or (position:sticky)) {
+    .bg-navbar {
+       position: -webkit-sticky;
+       position: sticky;
+       top: 0;
+       z-index: 1000;
+    }
+  }
+}
